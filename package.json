@@ -1,5 +1,5 @@
 {
-  "name": "iggy-social-frontend",
+  "name": "satraps-forum",
   "private": true,
   "scripts": {
     "build": "nuxt build",

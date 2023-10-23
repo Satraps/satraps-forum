@@ -1,9 +1,6 @@
-# Iggy Social Template
+# The Satraps Forum
 
-Iggy Social is a Web3 Social frontend website based on the [Iggy Social](https://iggy.social) template. It uses [Orbis SDK](https://useorbis.com) and [Ceramic Network](https://ceramic.network/) in the background. For usernames it uses [Punk Domains](https://punk.domains/).
-
-Demo 1 (Netlify): https://demo.iggy.social/
-Demo 2 (Vercel): https://demo2.iggy.social/
+The Satraps Forum is a decentralized web3 forum website based on the [Iggy Social](https://iggy.social) template. It uses [Orbis SDK](https://useorbis.com) and [Ceramic Network](https://ceramic.network/) in the background. For usernames it uses [Songbird Domains](https://songbird.domains/).
 
 ## Delete the .github folder
 
