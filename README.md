@@ -1,6 +1,6 @@
-# The Satraps Forum
+# The Satraps Court
 
-The Satraps Forum is a decentralized web3 forum website based on the [Iggy Social](https://iggy.social) template. It uses [Orbis SDK](https://useorbis.com) and [Ceramic Network](https://ceramic.network/) in the background. For usernames it uses [Songbird Domains](https://songbird.domains/).
+The Satraps Court is a decentralized web3 forum website based on the [Iggy Social](https://iggy.social) template. It uses [Orbis SDK](https://useorbis.com) and [Ceramic Network](https://ceramic.network/) in the background. For usernames it uses [Songbird Domains](https://songbird.domains/).
 
 ## Delete the .github folder
 

@@ -1,5 +1,5 @@
 {
-  "name": "satraps-forum",
+  "name": "satraps-court",
   "private": true,
   "scripts": {
     "build": "nuxt build",

@@ -10,10 +10,10 @@
         <i class="bi bi-arrow-left-circle cursor-pointer"></i>
       </p>
 
-      <h3 class="mb-3 mt-3">The Satraps Forum</h3>
+      <h3 class="mb-3 mt-3">The Satraps Court</h3>
 
       <p class="text-break mt-3">
-        The Satraps Forum is a place where The Satraps web3 community can dicuss about the project, share ideas, and other things.
+        The Satraps Court is a place where The Satraps web3 community can dicuss about the project, share ideas, and other things.
       </p>
 
       <h5>Useful links</h5>
@@ -44,7 +44,7 @@
       <h5>Feedback</h5>
 
       <p class="text-break mt-3">
-        Feel free to post ideas, features suggestions, rants directly on this forum (in the Random or General channel). 
+        Feel free to post ideas, features suggestions, rants directly on this forum. 
       </p>
 
     </div>

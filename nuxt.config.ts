@@ -84,7 +84,7 @@ export default defineNuxtConfig({
       nftOrbisContext: "", // Orbis context for NFT collection pages
       orbisCategories: [ // use only alphanumeric ASCII characters for slugs! (no spaces, only dash is allowed)
         { "slug": "all", "title": "All posts", "hidden": true }, // not a real tag, just denotes the absence of a tag (always keep it here)
-        { "slug": "satraps", "title": "Satraps Forum", "hidden": false },
+        { "slug": "satraps", "title": "Satraps Court", "hidden": false },
         { "slug": "general", "title": "General discussion", "hidden": false },
         { "slug": "shill", "title": "Shill & discuss projects", "hidden": true },
         { "slug": "nfts-satraps", "title": "NFTs", "hidden": true }, // keep this category for the purpose of the NFT launchpad
@@ -107,16 +107,16 @@ export default defineNuxtConfig({
       previewImageProfile: "/img/cover-profile.png",
       previewImageStake: "/img/cover-stake.png",
       profileMintedPostIdsMax: 36, // max number of minted post ids to show in the profile page
-      projectMetadataTitle: "The Satraps Forum",
-      projectName: "The Satraps Forum | Historians of Web3",
+      projectMetadataTitle: "The Satraps Court",
+      projectName: "The Satraps Court | Historians of Web3",
       projectDescription: "Forum for The Satraps web3 community",
       projectTwitter: "https://twitter.com/TheSatraps",
-      projectUrl: "https://forum.satraps.io", // without trailing slash!
+      projectUrl: "https://court.satraps.io", // without trailing slash!
       punkMinterAddress: "0x7840735F2f66e9556aD74c6e34EB1035128cA263", // punk domain minter contract address
       punkNumberOfPrices: 5, // number of different prices (based on domain length), usually 1 (price()) or 5 (price1char() - price5char())
       punkTldAddress: "0xeFBE0b46649B7A0F1e1D49CCa98aD9CF6bcFB096", // punk domain TLD address
       randomPostsNumber: 1, // number of random post NFTs to show in the sidebar widget
-      rpcCustom: process.env.RPC_CUSTOM || "", // Custom RPC URL
+      rpcCustom: process.env.RPC_CUSTOM || "https://songbird-explorer.flare.network", // Custom RPC URL
       showFeatures: { // show/hide features in sidebars (if you have too many "true", make the sidebar scrollable --> sidebarLeftSticky: false)
         "activityPoints": false, 
         "airdrop": false, 
