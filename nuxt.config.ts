@@ -97,15 +97,15 @@ export default defineNuxtConfig({
       orbisContext: "kjzl6cwe1jw14a064memywn3fhuks5w3m2xfole8vrj202suz4xq8o9yfhso6hf", // production context
       orbisTest: false, // if true, test context will be used instead of the production one
       orbisTestContext: "kjzl6cwe1jw145tfqv2eqv8tiz6puo27meyz4smz40atppuc13tulqca87k35z2", // test context
-      previewImage: "/img/cover.png",
-      previewImageAirdrop: "/img/cover-airdrop.png",
-      previewImageNftCollection: "/img/cover-nft-collection.png",
-      previewImageNftCreate: "/img/cover-nft-create.png",
-      previewImageNftLaunchpad: "/img/cover-nft-launchpad.png",
-      previewImagePost: "/img/cover-post.png",
-      previewImagePostNft: "/img/cover-post-nft.png",
-      previewImageProfile: "/img/cover-profile.png",
-      previewImageStake: "/img/cover-stake.png",
+      previewImage: "/img/cover.jpg",
+      previewImageAirdrop: "/img/cover.jpg",
+      previewImageNftCollection: "/img/cover.jpg",
+      previewImageNftCreate: "/img/cover.jpg",
+      previewImageNftLaunchpad: "/img/cover.jpg",
+      previewImagePost: "/img/cover.jpg",
+      previewImagePostNft: "/img/cover.jpg",
+      previewImageProfile: "/img/cover.jpg",
+      previewImageStake: "/img/cover.jpg",
       profileMintedPostIdsMax: 36, // max number of minted post ids to show in the profile page
       projectMetadataTitle: "The Satraps Court",
       projectName: "The Satraps Court | Historians of Web3",
