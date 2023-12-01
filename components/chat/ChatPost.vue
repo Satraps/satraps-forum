@@ -92,9 +92,7 @@
           {{post.count_replies}}
         </NuxtLink>
 
-        <!--
         <IggyPostMint :post="post" :parsedText="parsedText" v-if="isActivated" />
-        -->
 
         <span v-if="post.master" class="cursor-pointer hover-color ms-2" data-bs-toggle="modal" :data-bs-target="'#replyModal'+post.stream_id">
           <i class="bi bi-reply" /> Reply
@@ -529,6 +527,8 @@ export default {
 
           if (this.$config.linkPreviews === "netlify") {
             fetcherService = thisAppUrl + "/.netlify/functions/linkPreviews?url=" + this.firstLink;
+          } else if (this.$config.linkPreviews === "vercel") {
+            fetcherService = thisAppUrl + "/api/linkPreviews?url=" + this.firstLink;
           } else if (this.$config.linkPreviews === "microlink") {
             fetcherService = "https://api.microlink.io/?url=" + this.firstLink;
           }
