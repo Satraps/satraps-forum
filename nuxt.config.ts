@@ -70,6 +70,7 @@ export default defineNuxtConfig({
       iggyPostAddress: "0xE33F27496A9cE75313f6d1FA2BA95657Fc904387",
       iggyPostMinterAddress: "0x9e9905FA405A5FC7Ee2DEB94CbAc089B4FE6f0Ef",
       iggyPostStatsAddress: "0xE2AfE33f16519e31c6FFE5eEb333A0887a44D2BC",
+      ipfsGateway: "https://cloudflare-ipfs.com/ipfs/",
       keysAddress: "", // FriendKeys contract address 
       keysContext: "",
       keysFeatured: ["tempe", "tekr"],
