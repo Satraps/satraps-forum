@@ -51,7 +51,6 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       activityPointsAddress: "",
-      activityPointsRatio: 1_000_000, 
       airdropApAddress: "", // chat token claim for APs
       airdropClaimDomainsAddress: "", // chat token claim for domain holders
       blockExplorerBaseUrl: "https://songbird-explorer.flare.network",
