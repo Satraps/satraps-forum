@@ -8,7 +8,13 @@
       <div class="modal-content">
         <div class="modal-header">
           <h1 class="modal-title fs-5" id="emojiModalLabel">Pick an Emoji</h1>
-          <button id="closeEmojiModal" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button
+            id="closeEmojiModal"
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
         </div>
         <div class="modal-body">
           <EmojiMartPicker
@@ -42,14 +48,14 @@ export default {
   setup(props, context) {
     const emojiIndex = new EmojiIndex(data)
 
-    const handleEmojiSelect = (emoji) => {
-      document.getElementById('closeEmojiModal').click();
-      context.emit('updateEmoji', emoji.native);
+    const handleEmojiSelect = emoji => {
+      document.getElementById('closeEmojiModal').click()
+      context.emit('updateEmoji', emoji.native)
     }
 
     return {
       emojiIndex,
-      handleEmojiSelect
+      handleEmojiSelect,
     }
   },
 }

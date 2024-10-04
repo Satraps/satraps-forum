@@ -72,7 +72,7 @@
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: "DM Sans", sans-serif;
+  --bs-body-font-family: Arial, sans-serif;
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -127,6 +127,10 @@ a {
 
 a:hover {
   color: var(--bs-link-hover-color);
+}
+
+.body-color {
+  color: var(--bs-body-color);
 }
 
 .bg-mode {
@@ -246,6 +250,10 @@ a:hover {
 .emoji-mart-static .emoji-mart-category-label, .emoji-mart-static .emoji-mart-category-label h3 {
   background-color: #222529;
   color: #ffffff;
+}
+
+.force-circle {
+  clip-path: circle();
 }
 
 .form-control, .input-group-text {
@@ -391,10 +399,52 @@ a:hover {
   background-color: var(--bs-nav-pills-link-active-bg);
 }
 
+.pfp-img {
+  max-width: 102% !important;
+  height: auto;
+}
+
+.pfp-sizing {
+  padding-left: calc(var(--bs-gutter-x)* 0.05);
+  padding-right: calc(var(--bs-gutter-x)* 0.18);
+}
+
+.post-sizing {
+  padding-left: calc(var(--bs-gutter-x)* .18);
+  padding-right: calc(var(--bs-gutter-x)* .4);
+}
+
+.post-sizing > .row {
+  margin-left: 0 !important;
+}
+
+.preview-card {
+  border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important;
+  padding:0
+}
+
+.preview-card-body {
+  border:none !important;
+}
+
+.preview-card-body.bg-body {
+  height: auto;
+  width: 100%;
+  border: none !important;
+}
+
+.preview-card-img {
+  padding: 5%;
+}
+
 .quote-reply-to {
   font-size: 0.725rem;
   font-weight: 400;
   font-style: italic;
+}
+
+.quote-text {
+  cursor: pointer;
 }
 
 .sidebar-card-body {
@@ -465,6 +515,11 @@ a:hover {
 
   .sidebar-nav {
     width: 260px;
+  }
+
+  .youtube-embed {
+    max-width: 560px;
+    max-height: 340px;
   }
 }
 
