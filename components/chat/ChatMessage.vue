@@ -16,7 +16,7 @@
 
         <!-- post author and timestamp -->
         <p class="card-subtitle mb-2 text-muted">
-          <NuxtLink class="link-without-color hover-color author-color" :to="'/profile/?id=' + String(showDomainOrFullAddress)">
+          <NuxtLink class="link-without-color hover-color" :to="'/profile/?id=' + String(showDomainOrFullAddress)">
             {{ showDomainOrAddress }}
           </NuxtLink>
           <span v-if="message?.createdAt && !isComment">
@@ -40,7 +40,7 @@
         <!-- post title -->
         <div v-if="parsedTitle && isMainChatMessage">
           <h5 class="card-title text-break">
-            <NuxtLink class="link-without-color hover-color" :to="postUrl">
+            <NuxtLink class="link-without-color hover-color post-text-color" :to="postUrl">
               {{ parsedTitle }}
             </NuxtLink>
           </h5>
