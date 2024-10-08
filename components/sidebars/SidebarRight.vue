@@ -5,6 +5,24 @@
         <!-- Mint/register a domain name -->
         <NameMintWidget />
 
+        <!-- Connect wallet / Switch Chain -->
+        <div v-if="isMobile" class="card m-2 bg-light">
+          <div class="card-body sidebar-card-body text-center mt-4">
+            <ConnectWalletButton v-if="!isActivated" class="btn btn-primary" btnText="Connect wallet" />
+            <SwitchChainButton v-if="isActivated && !isSupportedChain" />
+
+            <div class="dropdown mt-2">
+              <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Actions
+              </button>
+              <ul class="dropdown-menu">
+                <li><button class="dropdown-item"  v-if="isActivated" @click="disconnect">Disconnect wallet</button></li>
+                <li><button class="dropdown-item" @click="deleteBrowserStorage">Delete browser storage</button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
         <!-- Referrals 
         <ReferralWidget />
         -->
@@ -53,19 +71,34 @@
 
 <script>
 import tokens from '~/assets/data/tokens.json'
-import { useSidebarStore } from '~/store/sidebars'
+import ConnectWalletButton from '~/components/ConnectWalletButton.vue'
+import SwitchChainButton from '~/components/SwitchChainButton.vue'
 import NameMintWidget from '~/components/names/NameMintWidget.vue'
 import SimpleSwapWidget from '~/components/swap/SimpleSwapWidget.vue'
 import ReferralWidget from '~/components/referrals/ReferralWidget.vue'
+import { useEthers } from '~/store/ethers'
+import { useSidebarStore } from '~/store/sidebars'
 
 export default {
   name: 'SidebarRight',
   props: ['rSidebar', 'isMobile'],
 
   components: {
+    ConnectWalletButton,
     NameMintWidget,
     ReferralWidget,
     SimpleSwapWidget,
+    SwitchChainButton,
+  },
+
+  computed: {
+    isSupportedChain() {
+      if (this.chainId === this.$config.supportedChainId) {
+        return true
+      } else {
+        return false
+      }
+    },
   },
 
   methods: {
@@ -76,11 +109,18 @@ export default {
         this.sidebarStore.setMainContent(true)
       }
     },
+
+    deleteBrowserStorage() {
+      window.localStorage.clear()
+      window.sessionStorage.clear()
+      window.location.reload()
+    },
   },
 
   setup() {
+    const { chainId, disconnect, isActivated } = useEthers()
     const sidebarStore = useSidebarStore()
-    return { sidebarStore, tokens }
+    return { chainId, disconnect, isActivated, sidebarStore, tokens }
   },
 }
 </script>
