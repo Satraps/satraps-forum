@@ -13,11 +13,11 @@
 
             <div class="dropdown mt-2">
               <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Click for more actions
+                Actions
               </button>
               <ul class="dropdown-menu">
                 <li><button class="dropdown-item"  v-if="isActivated" @click="disconnect">Disconnect wallet</button></li>
-                <li><button class="dropdown-item" @click="deleteBrowserStorage">Clear browser storage</button></li>
+                <li><button class="dropdown-item" @click="deleteBrowserStorage">Delete browser storage</button></li>
               </ul>
             </div>
           </div>
