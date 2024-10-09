@@ -1,9 +1,9 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-bg-custom">
     <div class="container-fluid mx-3">
-      <NuxtLink class="navbar-brand" to="/">
-        <img src="/img/favicon.png" alt="Chat logo" height="35" />
-        <span class="ms-2 align-middle">The Satraps Court</span>
+      <NuxtLink class="navbar-brand logoTitle" to="/">
+        <img src="/img/logov1.png" alt="Chat logo" height="50" />
+        <span class="ms-2 align-middle logoTitle">The Satraps Forum</span>
       </NuxtLink>
 
       <ul class="navbar-nav justify-content-end flex-grow-1">
@@ -80,7 +80,7 @@
           </div>
         </li>
 
-        <li class="nav-item cursor-pointer">
+        <!-- <li class="nav-item cursor-pointer">
           <span class="nav-link" v-if="siteStore.getColorMode === 'dark'" @click="changeColorMode('light')">
             <i class="bi bi-brightness-high"></i>
           </span>
@@ -88,7 +88,7 @@
           <span class="nav-link" v-if="siteStore.getColorMode === 'light'" @click="changeColorMode('dark')">
             <i class="bi bi-moon-fill"></i>
           </span>
-        </li>
+        </li> -->
       </ul>
     </div>
   </nav>

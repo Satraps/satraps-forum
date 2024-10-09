@@ -60,6 +60,17 @@
 
             <ul class="list-group">
               <NuxtLink
+                to="/sentiment"
+                class="list-group-item cursor-pointer hover-color bg-light border-0"
+                :class="$route.path.startsWith('/sentiment') ? 'active' : ''"
+                @click="closeLeftSidebar"
+              >
+                Sentiment Program
+              </NuxtLink>
+            </ul>
+
+            <ul class="list-group">
+              <NuxtLink
                 to="/random"
                 class="list-group-item cursor-pointer hover-color bg-light border-0"
                 :class="$route.path.startsWith('/random') ? 'active' : ''"
@@ -208,6 +219,30 @@
                 to="/find-user"
               >
                 <i class="bi bi-binoculars me-2"></i> Find User
+              </NuxtLink>
+            </li>
+
+            <!-- Tutorial -->
+            <li class="nav-item p-1" @click="closeLeftSidebar">
+              <NuxtLink
+                class="nav-link"
+                :class="$route.path.startsWith('/tutorial') ? 'active' : ''"
+                aria-current="page"
+                to="/tutorial"
+              >
+                <i class="bi bi-book me-2"></i> Tutorial
+              </NuxtLink>
+            </li>
+
+            <!-- Satraps Court -->
+            <li class="nav-item p-1" @click="closeLeftSidebar">
+              <NuxtLink
+                class="nav-link"
+                :class="$route.path.startsWith('/court') ? 'active' : ''"
+                aria-current="page"
+                to="/court"
+              >
+                <i class="bi bi-person-check me-2"></i> Satraps Court
               </NuxtLink>
             </li>
 

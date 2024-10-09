@@ -10,7 +10,7 @@
         <i class="bi bi-arrow-left-circle cursor-pointer"></i>
       </p>
 
-      <h3 class="mb-3 mt-3">Satraps forum</h3>
+      <h3 class="mb-3 mt-3 text-center">Satraps forum</h3>
 
       <p class="text-break mt-3">
         A place where Satraps community can discuss anything about Satraps and web3 ethics.

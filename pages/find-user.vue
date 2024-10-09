@@ -11,7 +11,7 @@
           <i class="bi bi-arrow-left-circle cursor-pointer" @click="$router.back()"></i>
         </p>
 
-        <h3 class="mt-3">Find user</h3>
+        <h3 class="mt-3 text-center">Find user</h3>
 
         <div class="d-flex justify-content-center mt-5">
           <div class="col-12 col-lg-8">

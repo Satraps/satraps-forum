@@ -6,8 +6,8 @@
         <span v-if="sidebarStore.showLeftSidebar" class="bi bi-x-lg"></span>
       </button>
 
-      <NuxtLink class="navbar-brand mx-auto" to="/">
-        <img src="https://id.satraps.io/assets/satraps-logo.c26fb5ee.png" alt="Chat logo" height="35">
+      <NuxtLink class="navbar-brand mx-auto brand-container" to="/">
+    <img src="/img/logov1.png" alt="Chat logo" height="50"><br>The Satraps Forum
       </NuxtLink>
 
       <button @click="toggleRightSidebar" class="nav-item btn navbar-toggler nav-btn-right" type="button">
@@ -85,7 +85,7 @@ export default {
   setup() {
     const { chainId, isActivated } = useEthers()
     const sidebarStore = useSidebarStore()
-    return { chainId, isActivated, sidebarStore }
+    return { chainId, isActivated, sidebarStore, }
   },
 }
 </script>

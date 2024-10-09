@@ -59,6 +59,7 @@ export default defineNuxtConfig({
         contexts: {
           general: '0x71b2Af57FE6d902b03439acdcF08e59fcE61cA9B', // general topics category
           audits: '0xF268D749aE4918a26f49CC5B148f95aF2452645D',
+          sentiment: '0x716d14CF42Db2E93a86b722354F6D6fea695F913',
           random: '0xd942c71a4c7951Ad27Bbf50aa69Ec7EB61c2D463',
           nftLaunchpad: '', // comments context
         },
@@ -72,7 +73,7 @@ export default defineNuxtConfig({
       expiryMods: 1000 * 60 * 60 * 24 * 7, // must be in milliseconds (0 means no expiration)
       expiryPfps: 1000 * 60 * 60 * 24 * 10, // must be in milliseconds (0 means no expiration)
       expiryUsernames: 1000 * 60 * 60 * 24 * 7, // must be in milliseconds (0 means no expiration)
-      favicon: '/img/favicon.png',
+      favicon: '/img/logov1.png',
       fileUploadEnabled: true, // enable/disable file uploads (enable only if external file storage is used, e.g. Arweave)
       fileUploadSizeLimit: 1 * 1024 * 1024, // max file upload size in bytes (1 * 1024 * 1024 = 1 MB)
       fileUploadStorageType: "arweave", // "arweave" or "imagekit"
@@ -102,9 +103,9 @@ export default defineNuxtConfig({
       previewImageProfile: '/img/cover.jpg',
       previewImageStake: '/img/cover.jpg',
       profileMintedPostIdsMax: 36, // max number of minted post ids to show in the profile page
-      projectMetadataTitle: 'The Satraps Court | Historians of Web3',
-      projectName: 'The Satraps Court | Historians of Web3',
-      projectDescription: 'The Satraps Court is a decentralized forum for the Satraps community.',
+      projectMetadataTitle: 'The Satraps Forum | Historians of Web3',
+      projectName: 'The Satraps Forum | Historians of Web3',
+      projectDescription: 'The Satraps Forum is a decentralized forum for the Satraps community.',
       projectTwitter: 'https://twitter.com/TheSatraps',
       projectUrl: 'https://forum.satraps.io', // without trailing slash!
       punkMinterAddress: '0x7840735F2f66e9556aD74c6e34EB1035128cA263', // punk domain minter contract address

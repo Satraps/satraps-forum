@@ -3,7 +3,7 @@
     <div class="card-header bg-light">Get a {{ $config.tldName }} name</div>
 
     <div class="card-body sidebar-card-body">
-      <p>Get yourself a {{ $config.tldName }} username and start chatting with other community members.</p>
+      <p>Get yourself a {{ $config.tldName }} username and engage with other Satraps.</p>
 
       <div class="input-group mb-3">
         <input
