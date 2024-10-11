@@ -5,11 +5,32 @@
         <i class="bi bi-arrow-left-circle cursor-pointer"></i>
       </p>
 
-      <h3 class="mb-3 mt-3 text-center">Demo: Mini Satraps Court</h3>
-
-      <p class="text-break mt-3">
-        Welcome to the mini Satraps Court interface. This interface is designed for use in the Satraps forum for ease of access alongside discussions at the web3 forum. Currently, the court has no active sessions and the below interface is a placeholder. The Court's smart contracts were tested during a closed beta from Jan 2024 until March 2024. You can find the results of the beta on the Satraps beta page - links to past sessions can be found on the bottom of this page. 
-      </p>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h3 class="mb-3 mt-3 text-center">Demo: Mini Satraps Court</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <p class="text-break mt-3">
+              Welcome to the mini Satraps Court interface. This interface is designed
+              for use in the Satraps forum for ease of access alongside discussions
+              at the web3 forum. Currently, the court has no active sessions and the
+              below interface is a placeholder. The Court's smart contracts were
+              tested during a closed beta from Jan 2024 until March 2024.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <p class="text-break mt-3">
+              You can find the results of past sessions on the Satraps beta page - links
+              to past sessions can be found at the bottom of this page.
+              <hr />
+              Before you can vote, you must have staked your Senator NFTs for at least 2 weeks at the main Satraps Court page. Please make yourself familiar with the main <a href="https://beta.satraps.io/" target="_blank">Satraps Court Beta</a> in the meantime.
+            </p>
+          </div>
+        </div>
+      </div>
 
       <hr class="my-4" />
 
@@ -17,7 +38,7 @@
       <div class="voting-section">
         <!-- session title - will be loaded from Smart Contract in the future -->
         <h5 class="text-center mb-4">Current Session:</h5>
-        <h4 class="text-center">What areas DAOs do we need to improve?</h4>
+        <h4 class="text-center">What areas of DAOs do we need to improve?</h4>
 
         <!-- session description - will be loaded from Smart Contract in the future -->
         <p class="text-center text-muted mb-4">This voting session aims to identify the most pressing challenges DAOs face, such as governance scalability, participation incentives, and transparency.
