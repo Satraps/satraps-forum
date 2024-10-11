@@ -1,5 +1,5 @@
 <template>
-  <div class="card border scroll-500">
+  <div class="card border scroll-500 margin-bottom">
     <div class="card-body">
       <p class="fs-3" @click="$router.back()">
         <i class="bi bi-arrow-left-circle cursor-pointer"></i>
@@ -191,4 +191,8 @@ hr {
   font-size: 0.8rem;
   font-weight: 500;
 }
+
+.margin-bottom {
+    margin-bottom: 100px;
+  }
 </style>

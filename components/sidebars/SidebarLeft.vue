@@ -36,6 +36,7 @@
           </div>
 
           <ul class="nav nav-pills flex-column">
+            <p class="text-center leftSidebar-titles">Forum Categories</p>
             <ul class="list-group">
               <NuxtLink
                 to="/"
@@ -80,7 +81,7 @@
               </NuxtLink>
             </ul>
 
-            <hr />
+            <!-- <hr /> -->
 
             <!-- Home 
           <li class="nav-item p-1" @click="closeLeftSidebar">
@@ -89,6 +90,8 @@
             </NuxtLink>
           </li>
           -->
+
+          <p class="text-center leftSidebar-titles">Info & Tools</p>
 
             <!-- NFT Launchpad -->
             <li
