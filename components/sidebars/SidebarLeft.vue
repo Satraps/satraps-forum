@@ -31,8 +31,8 @@
                 {{ getUserAp }} AP
               </NuxtLink>
             </div>
-
-            <hr />
+<!-- 
+            <hr /> -->
           </div>
 
           <ul class="nav nav-pills flex-column">
