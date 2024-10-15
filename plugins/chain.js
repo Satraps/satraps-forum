@@ -14,6 +14,14 @@ export default defineNuxtPlugin(() => {
   }
 
   function getFallbackProvider(networkId) {
+    // get custom rpc from config
+    const customRpc = config.customRpc
+    //console.log('customRpc getFallbackProvider', customRpc)
+
+    if (customRpc) {
+      return new ethers.providers.JsonRpcProvider(customRpc)
+    }
+
     let chain = chains.find(chain => chain.chainId == networkId)
 
     // choose random rpc from chain.rpcs array
